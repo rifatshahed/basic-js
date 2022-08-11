@@ -42,12 +42,12 @@ console.log(iNeedOils);
 // 4. Public Bus Fare 
 function publicBusFare(fare){
     
-    const reserveBusSit = 50;
+    const reserveBusSit =reserveBusAmount * 50;
     const PeopleGoviaReserveBus = reserveBusSit;
     const reserveBusPeopleRemaining = peoples - PeopleGoviaReserveBus;
 
 
-    const microBusSit = 13;
+    const microBusSit =microBusAmount * 11;
     const PeopleGoviaMicroBus = microBusSit;
     const microBusPeopleRemaining = reserveBusPeopleRemaining - PeopleGoviaMicroBus;
 
@@ -60,8 +60,33 @@ function publicBusFare(fare){
 
 const peoples = 235;
 
+const reserveBusAmount = 4;
 
+const microBusAmount = 3;
 
 const publicBusTicketFare = publicBusFare(250);
 
 console.log(publicBusTicketFare);
+
+
+
+// 5. Is Best Friend
+function isBestFriend(firstPerson, secondPerson){
+
+    if(personOne.name == personTwo.friendsName && personOne.friendsName == personTwo.name){
+        return true
+    }
+    else{
+        return false
+    }
+
+}
+
+    const personOne = {name: 'Rifat', friendsName: 'Suhel'};
+    const personTwo = {name: 'Suhel', friendsName: 'Rifat'};
+    const personDetails = isBestFriend(personOne, personTwo);
+    console.log(personDetails);
+
+
+
+
