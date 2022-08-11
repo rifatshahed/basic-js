@@ -5,13 +5,13 @@ function radianToDegree(radian){
     return degreeDecimal;
 }
 
-const radianAmount = 10;
+const radianAmount = 199;
 const degreeAmount = radianToDegree(radianAmount);
 console.log(degreeAmount);
 
 // 2. Is JavaScrit File
-function isJavaScriptFile(nameOfFile){
-    if(InputnameOfFile.endsWith('.js')){
+function isJavaScriptFile( fileName){
+    if(fileName.endsWith('.js')){
         return true
     }
     else{
@@ -20,7 +20,7 @@ function isJavaScriptFile(nameOfFile){
     
 }
 
-const InputnameOfFile = 'math.js';
+const InputnameOfFile = 'index.js';
 const nameOfFile = isJavaScriptFile(InputnameOfFile);
 console.log(nameOfFile);
 
@@ -58,11 +58,11 @@ function publicBusFare(fare){
     
 }
 
-const peoples = 235;
+const peoples = 112;
 
-const reserveBusAmount = 4;
+const reserveBusAmount = 2;
 
-const microBusAmount = 3;
+const microBusAmount = 1;
 
 const publicBusTicketFare = publicBusFare(250);
 
@@ -73,7 +73,7 @@ console.log(publicBusTicketFare);
 // 5. Is Best Friend
 function isBestFriend(firstPerson, secondPerson){
 
-    if(personOne.name == personTwo.friendsName && personOne.friendsName == personTwo.name){
+    if(firstPerson.name == secondPerson.friendsName && firstPerson.friendsName == secondPerson.name){
         return true
     }
     else{
